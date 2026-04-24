@@ -9,6 +9,18 @@
 
 library(shiny)
 
+# Load dataset
+data <- read.csv("data/reels_attention.csv")
+
+# Basic cleaning
+data <- data %>%
+  mutate(
+    platform = factor(platform),
+    stress_level = factor(stress_level, levels = c("Low", "Medium", "High")),
+    age_group = cut(age, breaks = c(10,20,30,40,50,60), labels = c("10-20","21-30","31-40","41-50","51-60"))
+  ) %>%
+  drop_na()
+
 # Define UI for application that draws a histogram
 ui <- fluidPage(
 
