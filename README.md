@@ -1,14 +1,16 @@
 # DASC3240_final_project
 
+# Repository Overview
+
 ## Purpose
 This repository hosts the collaborative development of a Shiny application in RStudio.  
-The app explores the relationship between short-form video consumption (Instagram Reels, YouTube Shorts, TikTok) and cognitive outcomes such as attention span, focus, productivity, and stress levels.
+The app explores the relationship between **teen social media usage** and **mental health outcomes**, including stress, sleep, and overall well-being.
 
 ## Contents
 - **data/**  
-  Contains the raw dataset (CSV) and any cleaned or processed versions prepared for visualization.
+  Contains the raw Kaggle dataset and any cleaned versions prepared for visualization.
 
-- **app.R** (or `ui.R` + `server.R`)  
+- **app.R**  
   The main Shiny application code, integrating user interface and server logic.
 
 - **scripts/**  
